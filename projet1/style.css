@@ -30,20 +30,28 @@ li:hover {
 
 @media only screen and (min-width: 600px) {
   .main_footer {
-    flex-direction: row;
-    justify-content: space-around;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
   }
   }
   footer {
     background-color: lightgray;
+   
   }
   .fa {
     color: #f76c6c;
     text-decoration: none;
-    display: flex;
-    margin: 10px;
+    margin: 5px;
   }
   .img_footer {
     height: 25px;
   } 
+  li {
+    color: #f76c6c;
+    list-style: none;
+    font-size: 25px;
+    display: inline-block;
+  }
 }
