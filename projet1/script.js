@@ -12,32 +12,50 @@ burger.addEventListener('click', () => {
 const showForm = document.querySelector('#btnAddContenu');
 showForm.addEventListener('click', showHide);
 
-function showHide() {
-  let statut = document.querySelector('#formIdea');
-  console.log('TEST');
-  if (statut.style.display == '') {
-    statut.style.display = 'none';
-  } else {
-    statut.style.display = '';
+function showHide(event) {
+  let statut = event.currentTarget.parentNode;
+  const form = document.createElement('form');
+  form.classList.add('formInstance');
+  statut.appendChild(form);
+
+  const labelForSubject = document.createElement('label');
+  labelForSubject.classList.add('labelInstance');
+  labelForSubject.innerText = 'Choisissez un sujet:';
+  form.appendChild(labelForSubject);
+
+  const select = document.createElement('select');
+  select.classList.add('formInstance');
+  form.appendChild(select);
+
+  const array = [
+    'Liste des sujet',
+    'Astuce',
+    'Code brut',
+    'Bonne pratique',
+    'signaler un bug',
+  ];
+
+  for (let i = 0; i < array.length; i++) {
+    let option = document.createElement('option');
+    option.value = array[i];
+    option.text = array[i];
+    select.appendChild(option);
   }
+
+  const labelForName = document.createElement('labelName');
+  labelForName.classList.add('labelName');
+  labelForName.innerText = 'Entrer votre prénom:';
+  form.appendChild(labelForName);
+
+  const inputText = document.createElement('input');
+  inputText.classList.add('inputName');
+  inputText.type = 'text';
+  inputText.name = 'input_name';
+  inputText.innerText = ' Votre nom ici';
+  form.appendChild(inputText);
 }
 
-// const addTopic = document.querySelector('.addSubject');
-// addTopic.addEventListener('click', addElement);
-
-// function addsection() {
-//   let subjectTitle = document.querySelector('#sujet-select');
-//   let userName = document.querySelector('#name');
-//   let userTitle = document.querySelector('#title');
-//   let userMsg = document.querySelector('#msg');
-
-//   function addElement(e) {
-//     let divActive = event.target.parentNode.parentNode;
-//     console.log(divActive);
-//   }
-// }
-
-<form id='formIdea'>
+/* <form id='formIdea'>
   <label for='sujet-select'>Choisissez un sujet:</label>
 
   <select name='sujets' id='sujet-select'>
@@ -66,4 +84,14 @@ function showHide() {
   <button type='submit' class='addSubject'>
     Ajouter un Topic
   </button>
-</form>;
+</form>; */
+
+// function showHide() {
+//   let statut = document.querySelector('#formIdea');
+//   console.log('TEST');
+//   if (statut.style.display == '') {
+//     statut.style.display = 'none';
+//   } else {
+//     statut.style.display = '';
+//   }
+// }
