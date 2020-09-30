@@ -1,3 +1,11 @@
+
+// Animation Menu-Burger
+const burger = document.querySelector('.burger');
+
+burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+})
+
 // AJOUT / DISPARITION DU FORMULAIRE
 
 const showForm = document.querySelector('#btnAddContenu');
@@ -57,3 +65,4 @@ function showHide() {
     Ajouter un Topic
   </button>
 </form>;
+
