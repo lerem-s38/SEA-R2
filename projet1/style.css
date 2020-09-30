@@ -1,4 +1,4 @@
-/* .main_footer {
+ .main_footer {
   display: flex;
   align-items: baseline;
   justify-content: space-around;
@@ -26,7 +26,7 @@ li:hover {
 }
 .img_footer {
   height: 50px;
-} */
+} 
 
 @media only screen and (min-width: 300px) {
   .main_footer {
@@ -46,6 +46,8 @@ li:hover {
   }
   .img_footer {
     height: 25px;
+    margin-top: 10px;
+    margin-right: 200px;
   } 
   li {
     color: #f76c6c;
