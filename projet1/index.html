@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
     <title>Wilder's box</title>
   </head>
   <body>
@@ -11,10 +17,101 @@
       <nav></nav>
     </header>
 
-    <main></main>
+    <main>
+      <!-- PARTIE IMAGE  A TRAVAILLER EN PARALLAX -->
+
+      <div class="darkmod">
+        <button>Click to darkmod</button>
+      </div>
+      <div class="parallax">
+        <img
+          id="main_background"
+          src="https://res.cloudinary.com/wildcodeschool/image/upload/c_fill,w_1900/v1/campuses/awwmoo0vzic5phmd9vpn"
+          alt="Présentation du campus Lyonnais"
+        />
+      </div>
+
+      <!-- CARD DECK -->
+
+      <div class="card-deck">
+        <div class="card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/480px-Unofficial_JavaScript_logo_2.svg.png"
+            class="card-img-top"
+            alt="LOGO JavaScript"
+          />
+          <div class="card-body">
+            <h5 class="card-title">JavaScript</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet.</p>
+            <div class="addContenu">
+              <button type="submit" id="btnAddContenu">ADD CONTENU</button>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://lh3.googleusercontent.com/proxy/dBflCvSq8X1TWe5RsypydRLg_ltogZHvgWBRhFTP-66IiAPOYgJ_3TEG2vJhrPCZm1vxUFS20oYpHjaMjfwzq2ZblSoqq1o_36ACA54D9fkbeaZ2doQ_ulLAKJ5XgQ47-NaM"
+            class="card-img-top"
+            alt="LOGO HTML et LOGO CSS"
+          />
+          <div class="card-body">
+            <h5 class="card-title">HTML / CSS</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              voluptatum natus et.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://du-bii.github.io/module-5-Methodes-Outils/seance5/images/git-github.png"
+            class="card-img-top"
+            alt="Logos Git et Github"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Git et Github</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Exercitationem ipsam porro hic alias quos ad quia perspiciatis
+              quaerat tempora ipsum!
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="https://www.gabon.campusfrance.org/sites/pays/files/gabon/medias/images/2018-05/Nous-Contacter.png"
+            class="card-img-top"
+            alt="Image pour le Contact"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Contact us</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+              esse impedit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <footer></footer>
 
     <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
