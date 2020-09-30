@@ -1,10 +1,11 @@
+console.log('HELLO WORLD');
 
 // Animation Menu-Burger
 const burger = document.querySelector('.burger');
 
 burger.addEventListener('click', () => {
-    burger.classList.toggle('active');
-})
+  burger.classList.toggle('active');
+});
 
 // AJOUT / DISPARITION DU FORMULAIRE
 
@@ -13,6 +14,7 @@ showForm.addEventListener('click', showHide);
 
 function showHide() {
   let statut = document.querySelector('#formIdea');
+  console.log('TEST');
   if (statut.style.display == '') {
     statut.style.display = 'none';
   } else {
@@ -65,4 +67,3 @@ function showHide() {
     Ajouter un Topic
   </button>
 </form>;
-
