@@ -172,3 +172,24 @@ input:checked + .slider:before {
   text-align: center;
   padding-bottom: 10px;
 }
+
+/* PAGE CONTACT ET FORMULAIRE */
+
+.backgroundBodyContact {
+  background-image: linear-gradient(to bottom, white, grey);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#contactFormulaire {
+  background-color: #f76c6c;
+  margin: auto;
+  height: 480px;
+  color: white;
+  font-weight: bold;
+}
+
+.form-group {
+  margin: 25px auto;
+}
