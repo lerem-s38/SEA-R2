@@ -132,8 +132,9 @@ input:checked + .slider:before {
 
 /*MAIN*/
 
-#main_background {
-  width: 100vh;
+.campus {
+  max-width: 100%;
+  height: auto;
 }
 
 /* ---------------  FOOTER  --------------------*/
