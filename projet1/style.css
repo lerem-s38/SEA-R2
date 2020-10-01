@@ -108,15 +108,15 @@ header {
   transition: 0.4s;
 }
 
-input:checked + .slider {
+input:checked+.slider {
   background-color: #2196f3;
 }
 
-input:focus + .slider {
+input:focus+.slider {
   box-shadow: 0 0 1px #2196f3;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -154,16 +154,19 @@ footer {
   display: flex;
   margin: 20px;
 }
+
 li {
   color: #f76c6c;
   list-style: none;
   font-size: 50px;
   display: inline-block;
 }
+
 li:hover {
   color: white;
   opacity: 0.15;
 }
+
 .img_footer {
   height: 50px;
 }
@@ -179,27 +182,56 @@ li:hover {
 footer {
   background-color: lightgray;
 }
+
 .fa {
   color: #f76c6c;
   text-decoration: none;
   margin: 5px;
 }
+
 .img_footer {
   height: 25px;
   margin-top: 10px;
   margin-right: 230px;
 }
+
 li {
   color: #f76c6c;
   list-style: none;
   font-size: 25px;
   display: inline-block;
 }
+
 li:hover {
   color: white;
   opacity: 0.15;
 }
+
 .logo_wild {
   text-align: center;
   padding-left: 150px;
+}
+
+
+
+/* PAGE CONTACT ET FORMULAIRE */
+
+.backgroundBodyContact {
+  background-image: linear-gradient(to bottom, white, grey);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#contactFormulaire {
+  background-color: #f76c6c;
+  margin: auto;
+  height: 480px;
+  color: white;
+  font-weight: bold;
+}
+
+
+.form-group {
+  margin: 25px auto;
 }
