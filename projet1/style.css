@@ -8,21 +8,36 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 300px; /*1*/
-  margin: 0px auto; /*2*/
-  background-color: white; /*3*/
-  box-shadow: 0px 5px 20px #999; /*4*/
+  width: 300px;
+  margin: 0px auto;
 }
 
-/* .card1 {
+/* carte1 */
+.card1 {
   width: 50%;
   height: 300px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   box-shadow: 0px 5px 20px #999;
   margin: 15px;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-.card2 {
+.card-date {
+  color: red;
+  font-size: 100%;
+  padding: 10px;
+}
+.card-title {
+  padding: 10px;
+}
+.card-description {
+  padding: 20px;
+}
+
+/* carte1 fin */
+
+/*.card2 {
   width: 50%;
   height: 300px;
   border: 1px solid black;
