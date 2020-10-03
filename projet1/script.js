@@ -1,4 +1,4 @@
-console.log('HELLO WORLD');
+/*console.log('HELLO WORLD');
 
 // ---------------------------------NAV ET HEADER---------------------------------------------
 
@@ -14,6 +14,20 @@ function burger() {
   } else {
     statut.style.display = 'none';
   }
-}
+}*/
 
 // ------------------------------------------------------------------------------
+
+
+/* fonction click sur le menu burger */
+function myFunction() {
+  const submenu = document.getElementById("myLinks");
+  if (submenu.style.display === "block") {
+    submenu.style.display = "none";
+  } else {
+    submenu.style.display = "block";
+  }
+}
+
+
+

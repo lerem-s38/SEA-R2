@@ -1,0 +1,153 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu burger et sous menu*/
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+
+  .topnav #myLinks {
+    display: none;
+  }
+  
+
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+  }
+  
+
+  .topnav a.icon {
+    background: rgb(244, 113, 115);
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 200px;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
+  .topnav a:hover {
+    background-color:  rgb(244, 113, 115);
+    color: black;
+  }
+
+
+  
+
+  .active {
+    background-color: rgb(244, 113, 115);
+    color: white;
+    height: 200px;
+  }
+
+/* logo WCS */
+.logo{
+    display: block;
+    position: absolute;
+    top: 0;
+    margin-left: 35%;
+  }
+
+.logo img{
+      height: 200px;
+  }
+
+  /* mise en forme bouton toggle */ 
+
+.bouton-toggle{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 100px;
+    margin-right: 100px;
+  }
+
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+
+
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
