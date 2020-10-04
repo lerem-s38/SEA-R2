@@ -5,31 +5,26 @@
   --shadow-two: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   --shadow-three: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 
-  --filter-one: grayscale(100%) blur(8px);
+  --filter-one: grayscale(100%) blur(2px);
   --filter-two: grayscale(0) blur(0);
 }
 
 body {
   background-color: var(--primary-color);
+  /* justify-content: center;
+  display: flex;
+  align-items: center; */
 }
 
-.card_1,
-.card_2,
-.card_3,
-.card_4,
-.card_5 {
+.card {
   -webkit-filter: grayscale(100%) blur(2px);
   filter: var(--filter-one);
   transition: 0.5s ease-in-out;
-  /* transform: scale(1.2); */
+
   cursor: pointer;
 }
 
-.card_1:hover,
-.card_2:hover,
-.card_3:hover,
-.card_4:hover,
-.card_5:hover {
+.card:hover {
   -webkit-filter: grayscale(0) blur(0);
   filter: (var) --filter-two;
   transition: 0.2s ease-in-out;
