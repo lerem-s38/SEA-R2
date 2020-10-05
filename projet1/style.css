@@ -1,1 +1,100 @@
+/* Initialisation du CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+/* ---------------  HEAD  --------------------*/
+
+.sticky-top {
+  background-color: #f47173;
+}
+
+.logoWcs {
+  width: 130px;
+  margin: 10px;
+}
+
+.miniatureBurger {
+  width: 40px;
+  margin: 10px;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*MAIN*/
+
+.campus {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ---------------  FOOTER  --------------------*/
+
+.main_footer {
+  background-color: #f47173;
+}
+
+.top_footer {
+  padding-top: 10px;
+}
+
+.fa {
+  color: white;
+}
+
+.top_footer ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.top_footer ul li {
+  list-style: none;
+}
+
+.top_footer ul li a {
+  font-size: 5vh;
+}
+
+.bottom_footer img {
+  max-height: 40px;
+}
+
+.bottom_footer {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* PAGE CONTACT ET FORMULAIRE */
+
+.backgroundBodyContact {
+  /* background-image: linear-gradient(to bottom, white, grey); */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+#contactFormulaire {
+  background-color: #f76c6c;
+  margin: auto;
+  height: 480px;
+  color: white;
+  font-weight: bold;
+}
+
+.form-group {
+  margin: 25px auto;
+}
