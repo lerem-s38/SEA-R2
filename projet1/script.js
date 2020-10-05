@@ -1,10 +1,14 @@
-console.log('HELLO WORLD');
+/*js menu déroulant*/
+const dropdownBtn = document.querySelector(".btn");
 
-// ---------------------------------NAV ET HEADER---------------------------------------------
+const dropdownMenu = document.querySelector(".sous-menu");
 
-document.querySelector('.sous-menu').style.display = 'none';
+dropdownBtn.addEventListener("click", function() {
+  
+  dropdownMenu.classList.toggle("visible");
+});
 
-const burgerMenu = document.querySelector('.button-burger');
+/* const burgerMenu = document.querySelector('.button-burger');
 burgerMenu.addEventListener('click', burger);
 
 function burger() {
@@ -14,7 +18,7 @@ function burger() {
   } else {
     statut.style.display = 'none';
   }
-}
+} */
 
 // ------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------
@@ -190,3 +194,4 @@ function darkMode() {
     document.location.reload(); //recharge la page
   }
 }
+

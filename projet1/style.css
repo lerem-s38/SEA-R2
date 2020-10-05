@@ -48,6 +48,9 @@
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .dark-mode {
@@ -75,21 +78,170 @@ body {
   justify-content: space-between;
 }
 
-/*MAIN*/
-
-.campus {
-  max-width: 100%;
-  height: auto;
+.container {
+  width: 100%;
+  height: 200px;
+  background-color: rgb(244, 113, 115);
 }
 
-/* ---------------  FOOTER  --------------------*/
+/* menu déroulant*/
 
-.main_footer {
-  background-color: #f47173;
+.sous-menu {
+  display: none;
+  list-style: none;
+  background-color: rgba(179, 154, 154, 0.123);
+  width: 20%;
+  text-align: center;
+  font-size: 30px;
 }
 
-.top_footer {
-  padding-top: 10px;
+.sous-menu li {
+  padding: 10px;
+  border-top: 1px solid black;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.link1:hover {
+  background-color: #f9d10f;
+  font-weight: 800;
+}
+
+.link2:hover {
+  background-color: #3b4d61;
+  font-weight: 800;
+}
+
+.link3:hover {
+  background-color: #ff6e40;
+  font-weight: 800;
+}
+
+.link4:hover {
+  background-color: #ed3572;
+  font-weight: 800;
+}
+
+.visible {
+  display: block;
+}
+
+.btn {
+  width: 20%;
+  height: 200px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(244, 113, 115);
+}
+
+.span1 {
+  width: 30%;
+  height: 4px;
+  background-color: black;
+  margin: 10px;
+}
+
+.span2 {
+  width: 30%;
+  height: 4px;
+  background-color: black;
+  margin: 10px;
+}
+
+.span3 {
+  width: 30%;
+  height: 4px;
+  background-color: black;
+  margin: 10px;
+}
+
+/* logo WCS */
+
+.logo {
+  display: block;
+  position: absolute;
+  top: 0;
+  margin-left: 35%;
+}
+
+.logo img {
+  height: 200px;
+}
+
+/* bouton toggle*/
+
+/* The switch - the box around the slider */
+
+.bouton-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 80px;
+  margin-right: 100px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 .fa {
@@ -125,16 +277,4 @@ body {
   height: 100vh;
   display: flex;
   align-items: center;
-}
-
-#contactFormulaire {
-  background-color: #f76c6c;
-  margin: auto;
-  height: 480px;
-  color: white;
-  font-weight: bold;
-}
-
-.form-group {
-  margin: 25px auto;
 }
