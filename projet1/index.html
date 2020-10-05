@@ -4,44 +4,48 @@
   <meta charset="utf-8">
   <title>Titre de la page</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  
 </head>
 <body>
- <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- Top Navigation Menu -->
-<div class="topnav">
-  <a href="#home" class="active">logo</a>
-  <!-- Navigation links (hidden by default) -->
-  <div id="myLinks">
-    <a class="link1" href="#">Javascript</a>
-    <a href="#">Git/Github</a>
-    <a href="#">Contact us</a>
-    <a href="#">About us</a>
-  </div>
-  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-  
+<div class="container">
 
-  <div class="logo">
-    <img src="file:///home/bouault/Images/LogoWcs.png" alt="Logo Wild Code School">
+    <div class="menu-burger">
+    <ul>
+        <button class="btn">
+            <span class="span1"></span>
+            <span class="span2"></span>
+            <span class="span3"></span>
+        </button>
+        <div class="sous-menu">
+            <li class="link1"><a href="#"></a>JavaScript</li>
+            <li class="link2"><a href="#"></a>Git/Github</li>
+            <li class="link3"><a href="#"></a>Contact Us</li>
+            <li class="link4"><a href="#"></a>About Us</li>
+        </div>
+    </ul>
+    </div>
+
+    <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/fr/e/e4/WildCodeSchool_logo_pink_background_400x220.png" 
+        alt="Logo de la Wild Code School">
     </div>
 
     <div class="bouton-toggle">
         <label class="switch">
             <input type="checkbox">
             <span class="slider round"></span>
-        </label>
+          </label>
     </div>
-
 
 
 </div>
 
 
 
+
+<script src="script.js"></script>
 </body>
 </html>
+
+

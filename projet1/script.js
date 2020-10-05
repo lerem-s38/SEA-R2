@@ -1,33 +1,10 @@
-/*console.log('HELLO WORLD');
+/*js menu déroulant*/
+const dropdownBtn = document.querySelector(".btn");
 
-// ---------------------------------NAV ET HEADER---------------------------------------------
-
-document.querySelector('.sous-menu').style.display = 'none';
-
-const burgerMenu = document.querySelector('.button-burger');
-burgerMenu.addEventListener('click', burger);
-
-function burger() {
-  let statut = document.querySelector('.sous-menu');
-  if (statut.style.display === 'none') {
-    statut.style.display = 'block';
-  } else {
-    statut.style.display = 'none';
-  }
-}*/
-
-// ------------------------------------------------------------------------------
+const dropdownMenu = document.querySelector(".sous-menu");
 
 
-/* fonction click sur le menu burger */
-function myFunction() {
-  const submenu = document.getElementById("myLinks");
-  if (submenu.style.display === "block") {
-    submenu.style.display = "none";
-  } else {
-    submenu.style.display = "block";
-  }
-}
-
-
-
+dropdownBtn.addEventListener("click", function() {
+  
+  dropdownMenu.classList.toggle("visible");
+});
