@@ -1,3 +1,43 @@
+/* css About us */
+:root {
+  --primary-color: #f1f1f1;
+
+  --shadow-one: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  --shadow-two: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  --shadow-three: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+  --filter-one: grayscale(100%) blur(1px);
+  --filter-two: grayscale(0) blur(0);
+}
+
+/* body {
+    background-color: var(--primary-color); 
+   justify-content: center;
+  display: flex;
+  align-items: center; 
+}  */
+
+.card {
+  -webkit-filter: grayscale(100%) blur(0px);
+  filter: var(--filter-one);
+  transition: 0.5s ease-in-out;
+  background-color: var(--primary-color);
+
+  cursor: pointer;
+}
+
+.card:hover {
+  -webkit-filter: grayscale(0) blur(0);
+  filter: (var) --filter-two;
+  transition: 0.2s ease-in-out;
+  transform: scale(0.9);
+  -webkit-box-shadow: var(--shadow-one);
+  -moz-box-shadow: var(--shadow-two);
+  box-shadow: var(--shadow-three);
+}
+
+/* css About */
+
 /* Initialisation du CSS */
 * {
   margin: 0;
