@@ -30,6 +30,9 @@
         <img class="miniatureBurger" src="https://i.ibb.co/Y2z15WH/pngegg.png" alt="pngegg">
 
         <img class="logoWcs" src="https://www.wildcodeschool.com/assets/logo_white-b3ba5f88186df8d04f5ef8be4c3cc057a49f77b25b2359c4f4b3b13c53e5aeb8.png" alt="Logo Wild Code School">
+
+        <button id="dark-mode">Switch to dark mode</button>
+
         </div>
 
       </header>
@@ -39,10 +42,22 @@
       <div>
         <!-- PARTIE IMAGE  A TRAVAILLER EN PARALLAX -->
 
-        <!-- <div class="darkmod">
-          <button>Click to darkmod</button>
-        </div> -->
-        <div>
+
+          <picture class="campus">
+          <source
+            media="(min-width:1200px)"
+            srcset="https://i.imgur.com/rI3owr7.png"
+          />
+          <source
+            media="(min-width:600px)"
+            srcset="https://i.imgur.com/9PYVZE5.png"
+          />
+          <img class="campus"
+          src="images/wcs.jpg"
+          alt="Présentation du campus Lyonnais" alt="Logo" />
+        </picture>
+       <div>
+
           <img
             class="campus"
             src="images/wcs.jpg"
@@ -55,10 +70,9 @@
        <!--  <div class="card-deck"></div> -->
           <!-- JAVASCRIPT -->
 
-
-        <div class="card">
+      <div class="card">
           <img
-          src="images/javascript.png"
+          src="images/Javascript.jpg"
             class="card-img-top"
             alt="LOGO JavaScript"
           />
@@ -78,7 +92,7 @@
 
         <div class="card">
           <img
-          src="images/html_css.png"
+          src="images/html_css.jpg"
             class="card-img-top"
             alt="LOGO HTML et LOGO CSS"
           />
@@ -99,7 +113,7 @@
 
         <div class="card">
           <img
-          src="images/git_github.png"
+          src="images/git_github.jpg"
             class="card-img-top"
             alt="Logos Git et Github"
           />
@@ -119,11 +133,13 @@
           <!-- NOUS CONTACTER -->
 
           <div class="card">
-            <img
-              src="images/contact_us.jpg"
+
+           <img
+              src="images/contact.jpg"
               class="card-img-top"
               alt="Image pour le Contact"
             />
+
             <div class="card-body">
               <h5 class="card-title">Contact us</h5>
               <p class="card-text">
@@ -210,5 +226,5 @@
     ></script>
   </body>
 
->>>>>>> dev
+
 </html>
