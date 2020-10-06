@@ -29,17 +29,35 @@ body {
 .sous-menu{
   display: none;
   list-style: none;
-  background-color: rgba(179, 154, 154, 0.123);
+  background-color: lightpink;
   width: 20%;
   text-align: center;
-  font-size: 30px;
+  font-size: 50px;
   position: relative;
+  width: 70%;
+  height: 50vh;
+  padding-top: 80px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .4);
 }
 .sous-menu li{
   padding: 10px;
-  border-top: 1px solid black;
   font-family: 'Courier New', Courier, monospace;
+  margin-left: 125px;
+  margin-right: 125px;
+  text-emphasis: none;
+  border: 1px dashed black;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  
 }
+
+.sous-menu li a{
+  text-decoration: none;
+  color: black;
+}
+
 .link1:hover{
   background-color: #F9D10F;
   font-weight: 800;
@@ -70,7 +88,7 @@ body {
   background-color: rgb(244, 113, 115);
 }
 .span1{
-  width: 50%;
+  width: 40%;
   height: 10px;
   background-color: black;
   margin: 10px;
@@ -78,7 +96,7 @@ body {
 
 }
 .span2{
-  width: 50%;
+  width: 40%;
   height: 10px;
   background-color: black;
   margin: 10px;
@@ -86,7 +104,7 @@ body {
  
 }
 .span3{
-  width: 50%;
+  width: 40%;
   height: 10px;
   background-color: black;
   margin: 10px;
