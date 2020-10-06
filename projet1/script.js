@@ -65,8 +65,20 @@ function submitMsg(event) {
   let nameWilder = document.querySelector('.inputName').value;
   newDivCibleHdeux.innerText = nameWilder;
 
+  document.querySelector("form").reset();
 
+  let comment = {
+    author: nameWilder,
+    subject: subjectWilder,
+    comment: textWilder,
+  }
+  console.log(comment);
 }
+
+
+
+//-------------------LOCAL STORAGE COMMENTAIRES----------------
+
 
 // ------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------
