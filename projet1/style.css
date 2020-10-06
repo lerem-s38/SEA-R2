@@ -18,15 +18,14 @@ body {
   color: white;
 }
 
-
 /* ---------------  HEAD  --------------------*/
-.sticky-top{
+.sticky-top {
   width: 100%;
   height: 200px;
-  background-color:  rgb(244, 113, 115);
+  background-color: rgb(244, 113, 115);
 }
 /* menu déroulant*/
-.sous-menu{
+.sous-menu {
   display: none;
   list-style: none;
   background-color: rgba(179, 154, 154, 0.123);
@@ -35,28 +34,28 @@ body {
   font-size: 30px;
   position: relative;
 }
-.sous-menu li{
+.sous-menu li {
   padding: 10px;
   border-top: 1px solid black;
   font-family: 'Courier New', Courier, monospace;
 }
-.link1:hover{
-  background-color: #F9D10F;
+.link1:hover {
+  background-color: #f9d10f;
   font-weight: 800;
 }
-.link2:hover{
-  background-color: #3B4D61;
+.link2:hover {
+  background-color: #3b4d61;
   font-weight: 800;
 }
-.link3:hover{
-  background-color: #FF6E40;
+.link3:hover {
+  background-color: #ff6e40;
   font-weight: 800;
 }
-.link4:hover{
-  background-color: #ED3572;
+.link4:hover {
+  background-color: #ed3572;
   font-weight: 800;
 }
-.visible{
+.visible {
   display: block;
 }
 .btn {
@@ -69,43 +68,40 @@ body {
   align-items: center;
   background-color: rgb(244, 113, 115);
 }
-.span1{
+.span1 {
   width: 50%;
   height: 10px;
   background-color: black;
   margin: 10px;
   border-radius: 10px;
-
 }
-.span2{
+.span2 {
   width: 50%;
   height: 10px;
   background-color: black;
   margin: 10px;
   border-radius: 10px;
- 
 }
-.span3{
+.span3 {
   width: 50%;
   height: 10px;
   background-color: black;
   margin: 10px;
   border-radius: 10px;
-
 }
 /* logo WCS */
-.logo{
+.logo {
   display: block;
   position: absolute;
   top: 0;
   margin-left: 35%;
 }
-.logo img{
+.logo img {
   height: 200px;
 }
 /* bouton toggle*/
 /* The switch - the box around the slider */
-.bouton-toggle{
+.bouton-toggle {
   position: absolute;
   top: 0;
   right: 0;
@@ -133,25 +129,25 @@ body {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 .slider:before {
   position: absolute;
-  content: "";
+  content: '';
   height: 26px;
   width: 26px;
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #2196f3;
 }
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
@@ -166,17 +162,14 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-
 .card-img-top {
   width: 100%;
 }
 
-
-
 /* ---------------  FORMULAIRE AJOUT CONTENU  --------------------*/
 
 .formInstance {
-  display: none; 
+  display: none;
 }
 
 .formContainer {
@@ -196,6 +189,7 @@ input:checked + .slider:before {
   text-align: center;
 }
 
+<<<<<<< HEAD
 .card-body h5,p {
   background-color: rgb(212, 209, 209);
   text-align: center;
@@ -229,11 +223,11 @@ label {
   margin: 5px;
 }
 
+=======
+>>>>>>> 7293bab6a9390fff22b071c547c197df00ec9cf2
 /* ----------------------------------------------------- */
 /* SECTION ABOUT US */
 .card {
-  -webkit-filter: grayscale(100%) blur(0px);
-  filter: var(--filter-one);
   transition: 0.5s ease-in-out;
   background-color: var(--primary-color);
 
@@ -241,8 +235,6 @@ label {
 }
 
 .card:hover {
-  -webkit-filter: grayscale(0) blur(0);
-  filter: (var) --filter-two;
   transition: 0.2s ease-in-out;
   transform: scale(0.9);
   -webkit-box-shadow: var(--shadow-one);
@@ -261,13 +253,9 @@ label {
   --filter-two: grayscale(0) blur(0);
 }
 
-
-
-
-
 /* ---------------  FOOTER  --------------------*/
 .main_footer {
-  background-color: #F47173;
+  background-color: #f47173;
 }
 .top_footer {
   padding-top: 10px;
