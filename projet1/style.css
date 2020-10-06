@@ -16,9 +16,10 @@ body{
       display: none;
       list-style: none;
       background-color: rgba(179, 154, 154, 0.123);
-      width: 20%;
       text-align: center;
       font-size: 30px;
+      width: 70%;
+      height: 1000px;
   }
   
   .sous-menu li{
