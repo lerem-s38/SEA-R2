@@ -19,10 +19,13 @@ body {
 }
 
 /* ---------------  HEAD  --------------------*/
+.menu-burger {
+  background-color:  #f47173;
+}
 .sticky-top {
   width: 100%;
   height: 200px;
-  background-color: rgb(244, 113, 115);
+  background-color:  #f47173;
 }
 /* menu déroulant*/
 .sous-menu {
@@ -189,7 +192,6 @@ input:checked + .slider:before {
   text-align: center;
 }
 
-<<<<<<< HEAD
 .card-body h5,p {
   background-color: rgb(212, 209, 209);
   text-align: center;
@@ -223,8 +225,6 @@ label {
   margin: 5px;
 }
 
-=======
->>>>>>> 7293bab6a9390fff22b071c547c197df00ec9cf2
 /* ----------------------------------------------------- */
 /* SECTION ABOUT US */
 .card {
