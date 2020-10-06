@@ -18,15 +18,14 @@ body {
   color: white;
 }
 
-
 /* ---------------  HEAD  --------------------*/
-.sticky-top{
+.sticky-top {
   width: 100%;
   height: 200px;
-  background-color:  rgb(244, 113, 115);
+  background-color: rgb(244, 113, 115);
 }
 /* menu déroulant*/
-.sous-menu{
+.sous-menu {
   display: none;
   list-style: none;
   background-color: rgba(179, 154, 154, 0.123);
@@ -35,28 +34,28 @@ body {
   font-size: 30px;
   position: relative;
 }
-.sous-menu li{
+.sous-menu li {
   padding: 10px;
   border-top: 1px solid black;
   font-family: 'Courier New', Courier, monospace;
 }
-.link1:hover{
-  background-color: #F9D10F;
+.link1:hover {
+  background-color: #f9d10f;
   font-weight: 800;
 }
-.link2:hover{
-  background-color: #3B4D61;
+.link2:hover {
+  background-color: #3b4d61;
   font-weight: 800;
 }
-.link3:hover{
-  background-color: #FF6E40;
+.link3:hover {
+  background-color: #ff6e40;
   font-weight: 800;
 }
-.link4:hover{
-  background-color: #ED3572;
+.link4:hover {
+  background-color: #ed3572;
   font-weight: 800;
 }
-.visible{
+.visible {
   display: block;
 }
 .btn {
@@ -69,114 +68,55 @@ body {
   align-items: center;
   background-color: rgb(244, 113, 115);
 }
-.span1{
+.span1 {
   width: 50%;
   height: 10px;
   background-color: black;
   margin: 10px;
   border-radius: 10px;
-
 }
-.span2{
+.span2 {
   width: 50%;
   height: 10px;
   background-color: black;
   margin: 10px;
   border-radius: 10px;
- 
 }
-.span3{
+.span3 {
   width: 50%;
   height: 10px;
   background-color: black;
   margin: 10px;
   border-radius: 10px;
-
 }
 /* logo WCS */
-.logo{
+.logo {
   display: block;
   position: absolute;
   top: 0;
   margin-left: 35%;
 }
-.logo img{
+.logo img {
   height: 200px;
 }
 /* bouton toggle*/
 /* The switch - the box around the slider */
-.bouton-toggle{
+.bouton-toggle {
   position: absolute;
   top: 0;
   right: 0;
   margin-top: 80px;
   margin-right: 100px;
 }
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-input:checked + .slider {
-  background-color: #2196F3;
-}
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-.slider.round:before {
-  border-radius: 50%;
-}
-
 
 .card-img-top {
   width: 100%;
 }
 
-
-
 /* ---------------  FORMULAIRE AJOUT CONTENU  --------------------*/
 
 .formInstance {
-  display: none; 
+  display: none;
 }
 
 .formContainer {
@@ -195,7 +135,6 @@ input:checked + .slider:before {
   background-color: #dbd7d9;
   text-align: center;
 }
-
 
 /* ----------------------------------------------------- */
 /* SECTION ABOUT US */
@@ -229,16 +168,13 @@ input:checked + .slider:before {
   --filter-two: grayscale(0) blur(0);
 }
 
-
-
-
-
 /* ---------------  FOOTER  --------------------*/
 .main_footer {
-  background-color: #F47173;
+  background-color: #f47173;
 }
 .top_footer {
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 .fa {
   color: white;
@@ -252,9 +188,10 @@ input:checked + .slider:before {
 }
 .top_footer ul li a {
   font-size: 5vh;
+  text-decoration: none;
 }
 .bottom_footer img {
-  max-height: 40px;
+  max-height: 80px;
 }
 .bottom_footer {
   text-align: center;
