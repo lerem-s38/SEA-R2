@@ -29,16 +29,17 @@ body {
 .sous-menu{
   display: none;
   list-style: none;
-  background-color: lightpink;
+  background-color: white;
   width: 20%;
   text-align: center;
   font-size: 50px;
   position: relative;
   width: 70%;
   height: 50vh;
-  padding-top: 80px;
+  padding-top: 100px;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
+  border: 4mm ridge rgb(244, 113, 115);
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .4);
 }
 .sous-menu li{
@@ -47,9 +48,9 @@ body {
   margin-left: 125px;
   margin-right: 125px;
   text-emphasis: none;
-  border: 1px dashed black;
-  border-radius: 20px;
-  margin-bottom: 20px;
+  border-top: 1px solid black;
+  padding: 50px;
+  margin-bottom: 
   
 }
 
