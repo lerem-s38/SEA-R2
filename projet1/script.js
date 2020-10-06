@@ -39,11 +39,6 @@ function showHide(event) {
   }
 }
 
-// let tabBtnSub = [
-//   document.querySelector('.subBtn'),
-//   document.querySelector('.subBtn'),
-//   document.querySelector('.subBtn'),
-// ];
 
 let btnSub = document.querySelectorAll('.subBtn');
 for (i = 0; i < btnSub.length; i++) {
@@ -69,6 +64,8 @@ function submitMsg(event) {
   divCible.insertBefore(newDivCibleHdeux, divCible.firstChild);
   let nameWilder = document.querySelector('.inputName').value;
   newDivCibleHdeux.innerText = nameWilder;
+
+
 }
 
 // ------------------------------------------------------------------------------

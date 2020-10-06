@@ -1,266 +1,308 @@
 <!doctype html>
 <html lang="fr">
+
 <head>
   <meta charset="utf-8">
   <title>Titre de la page</title>
   <link rel="stylesheet" href="style.css">
-  
+
+  <!-- LINK BOOTSTRAP -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" /> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
+
 <body>
 
-<div class="container">
+  <div class="sticky-top">
 
     <div class="menu-burger">
-    <ul>
-        <button class="btn">
-            <span class="span1"></span>
-            <span class="span2"></span>
-            <span class="span3"></span>
-        </button>
+      <button class="btn">
+        <span class="span1"></span>
+        <span class="span2"></span>
+        <span class="span3"></span>
+      </button>
+
+      <ul>
+
         <div class="sous-menu">
-            <li class="link1"><a href="#"></a>JavaScript</li>
-            <li class="link2"><a href="#"></a>Git/Github</li>
-            <li class="link3"><a href="#"></a>Contact Us</li>
-            <li class="link4"><a href="#"></a>About Us</li>
+          <li class="link1"><a href="#"></a>JavaScript</li>
+          <li class="link2"><a href="#"></a>Git/Github</li>
+          <li class="link3"><a href="contact.html">Contact Us</a></li>
+          <li class="link4"><a href="aboutUs.html">About Us</a></li>
 
         </div>
-    </ul>
+      </ul>
     </div>
-    <button id="dark-mode">Switch to dark mode</button>
 
-    <main>
-      <div>
-        <!-- PARTIE IMAGE  A TRAVAILLER EN PARALLAX -->
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/fr/e/e4/WildCodeSchool_logo_pink_background_400x220.png"
+        alt="Logo de la Wild Code School">
+    </div>
+
+    <div class="bouton-toggle" id="dark-mode">
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
+    </div>
+  </div>
+
+  <main>
+    <div>
+      <!-- PARTIE IMAGE  A TRAVAILLER EN PARALLAX -->
 
 
-          <picture class="campus">
-          <source
-            media="(min-width:1200px)"
-            srcset="https://i.imgur.com/rI3owr7.png"
-          />
-          <source
-            media="(min-width:600px)"
-            srcset="https://i.imgur.com/9PYVZE5.png"
-          />
-          <img class="campus"
-          src="images/wcs.jpg"
-          alt="Présentation du campus Lyonnais" alt="Logo" />
-        </picture>
-       <div>
+      <picture class="campus">
+        <source media="(min-width:1200px)" srcset="https://i.imgur.com/rI3owr7.png" />
+        <source media="(min-width:600px)" srcset="https://i.imgur.com/9PYVZE5.png" />
+        <!-- METTRE IMAGE PAR DEFAUT-->
+      </picture>
 
-          <img
-            class="campus"
-            src="images/wcs.jpg"
-            alt="Présentation du campus Lyonnais"
-          />
+    </div>
+
+    <!-- CARD DECK -->
+
+    <!--  <div class="card-deck"></div> -->
+    <!-- JAVASCRIPT -->
+
+    <div class="jsContainer">
+      <img src="images/Javascript.jpg" class="card-img-top" alt="LOGO JavaScript" />
+      <div class="card-body">
+        <h5 class="card-title">JavaScript</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet.</p>
+        <div class="addContenu">
+          <button type="submit" class="btnAddContenu1">ADD CONTENU</button>
+          <button type="submit" class="closeSubmit1"> X </button>
         </div>
 
-        <!-- CARD DECK -->
+        <form class="formInstance">
+          <div class="formContainer">
 
-       <!--  <div class="card-deck"></div> -->
-          <!-- JAVASCRIPT -->
+            <label class="labelInstance">
+              Choisissez un sujet:
+            </label>
 
-      <div class="card">
-          <img
-          src="images/Javascript.jpg"
-            class="card-img-top"
-            alt="LOGO JavaScript"
-          />
-          <div class="card-body">
-            <h5 class="card-title">JavaScript</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet.</p>
-            <div class="addContenu">
-              <button type="submit" class="btnAddContenu1">ADD CONTENU</button>
-              <button type="submit" class="closeSubmit1"> X </button>
-            </div>
-              <form class="formInstance">
-
-               <label class="labelInstance">
-                  Choisissez un sujet:
-                </label>
-
-                <select class="selectInstance">
-                  <option value="Liste des sujet">
-                    Liste des sujet
-                  </option>
-                  <option value="Astuce">
-                    Astuce</option>
-                  <option value="Code brut">
-                    Code brut
-                  </option>
-                 <option value="Bonne pratique">
-                  Bonne pratique
-                 </option>
-                 <option value="signaler un bug">
-                 signaler un bug
-                  </option>
-               </select>
-              
-               <label class="labelName">
-                  Entrer votre prénom:
-               </label>
-              
-               <input class="inputName" type="text" name="input_name">
-
-                <label class="labelMsg">Entrer votre message:
-               </label>
-
-                <textarea class="textarea" name="input_msg">
-                </textarea>
-              
-                <button class="subBtn">ENVOYER
-                </button>
-              </form>
-            </div>
-          </div>
-
-          <!-- HTML -->
-
-
-        <div class="card">
-          <img
-          src="images/html_css.jpg"
-            class="card-img-top"
-            alt="LOGO HTML et LOGO CSS"
-          />
-          <div class="card-body">
-            <h5 class="card-title">HTML / CSS</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-              voluptatum natus et.
-            </p>
-            <div class="addContenu">
-              <button type="submit" class="btnAddContenu2">ADD CONTENU</button>
-              <button type="submit" class="closeSubmit2"> X </button>
-            </div>
-
-              <form class="formInstance">
-
-                <label class="labelInstance">
-                   Choisissez un sujet:
-                 </label>
- 
-                 <select class="selectInstance">
-                   <option value="Liste des sujet">
-                     Liste des sujet
-                   </option>
-                   <option value="Astuce">
-                     Astuce</option>
-                   <option value="Code brut">
-                     Code brut
-                   </option>
-                  <option value="Bonne pratique">
-                   Bonne pratique
-                  </option>
-                  <option value="signaler un bug">
-                  signaler un bug
-                   </option>
-                </select>
-               
-                <label class="labelName">
-                   Entrer votre prénom:
-                </label>
-               
-                <input class="inputName" type="text" name="input_name">
- 
-                 <label class="labelMsg">Entrer votre message:
-                </label>
- 
-                 <textarea class="textarea" name="input_msg">
-                 </textarea>
-               
-                 <button class="subBtn">ENVOYER
-                 </button>
-               </form>
-
-            
-          </div>
-
-
-</div>
-
-        <div class="card">
-          <img
-          src="images/git_github.jpg"
-            class="card-img-top"
-            alt="Logos Git et Github"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Git et Github</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Exercitationem ipsam porro hic alias quos ad quia perspiciatis
-              quaerat tempora ipsum!
-            </p>
-            <div class="addContenu">
-              <button type="submit" class="btnAddContenu3">ADD CONTENU</button>
-              <button type="submit" class="closeSubmit3"> X </button>
-            </div>
-
-            <form class="formInstance">
-
-              <label class="labelInstance">
-                 Choisissez un sujet:
-               </label>
-
-               <select class="selectInstance">
-                 <option value="Liste des sujet">
-                   Liste des sujet
-                 </option>
-                 <option value="Astuce">
-                   Astuce</option>
-                 <option value="Code brut">
-                   Code brut
-                 </option>
-                <option value="Bonne pratique">
-                 Bonne pratique
-                </option>
-                <option value="signaler un bug">
+            <select class="selectInstance">
+              <option value="Liste des sujet">
+                Liste des sujet
+              </option>
+              <option value="Astuce">
+                Astuce</option>
+              <option value="Code brut">
+                Code brut
+              </option>
+              <option value="Bonne pratique">
+                Bonne pratique
+              </option>
+              <option value="signaler un bug">
                 signaler un bug
-                 </option>
-              </select>
-             
-              <label class="labelName">
-                 Entrer votre prénom:
-              </label>
-             
-              <input class="inputName" type="text" name="input_name">
+              </option>
+            </select>
 
-               <label class="labelMsg">Entrer votre message:
-              </label>
+            <label class="labelName">
+              Entrer votre prénom:
+            </label>
 
-               <textarea class="textarea" name="input_msg">
+            <input class="inputName" type="text" name="input_name">
+
+            <label class="labelMsg">Entrer votre message:
+            </label>
+
+            <textarea class="textarea" name="input_msg">
+                </textarea>
+
+            <button class="subBtn">ENVOYER
+            </button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+    <!-- HTML -->
+
+
+    <div class="htmlContainer">
+      <img src="images/html_css.jpg" class="card-img-top" alt="LOGO HTML et LOGO CSS" />
+      <div class="card-body">
+        <h5 class="card-title">HTML / CSS</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+          voluptatum natus et.
+        </p>
+        <div class="addContenu">
+          <button type="submit" class="btnAddContenu2">ADD CONTENU</button>
+          <button type="submit" class="closeSubmit2"> X </button>
+        </div>
+
+        <form class="formInstance">
+          <div class="formContainer">
+            <label class="labelInstance">
+              Choisissez un sujet:
+            </label>
+
+            <select class="selectInstance">
+              <option value="Liste des sujet">
+                Liste des sujet
+              </option>
+              <option value="Astuce">
+                Astuce</option>
+              <option value="Code brut">
+                Code brut
+              </option>
+              <option value="Bonne pratique">
+                Bonne pratique
+              </option>
+              <option value="signaler un bug">
+                signaler un bug
+              </option>
+            </select>
+
+            <label class="labelName">
+              Entrer votre prénom:
+            </label>
+
+            <input class="inputName" type="text" name="input_name">
+
+            <label class="labelMsg">Entrer votre message:
+            </label>
+
+            <textarea class="textarea" name="input_msg">
+                 </textarea>
+
+            <button class="subBtn">ENVOYER
+            </button>
+          </div>
+        </form>
+
+
+      </div>
+
+
+    </div>
+
+    <!-- GIT GIT/HUB -->
+
+    <div class="gitContainer">
+      <img src="images/git_github.jpg" class="card-img-top" alt="Logos Git et Github" />
+      <div class="card-body">
+        <h5 class="card-title">Git et Github</h5>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Exercitationem ipsam porro hic alias quos ad quia perspiciatis
+          quaerat tempora ipsum!
+        </p>
+        <div class="addContenu">
+          <button type="submit" class="btnAddContenu3">ADD CONTENU</button>
+          <button type="submit" class="closeSubmit3"> X </button>
+        </div>
+
+        <form class="formInstance">
+
+          <label class="labelInstance">
+            Choisissez un sujet:
+          </label>
+
+          <select class="selectInstance">
+            <option value="Liste des sujet">
+              Liste des sujet
+            </option>
+            <option value="Astuce">
+              Astuce</option>
+            <option value="Code brut">
+              Code brut
+            </option>
+            <option value="Bonne pratique">
+              Bonne pratique
+            </option>
+            <option value="signaler un bug">
+              signaler un bug
+            </option>
+          </select>
+
+          <label class="labelName">
+            Entrer votre prénom:
+          </label>
+
+          <input class="inputName" type="text" name="input_name">
+
+          <label class="labelMsg">Entrer votre message:
+          </label>
+
+          <textarea class="textarea" name="input_msg">
                </textarea>
-             
-               <button class="subBtn">ENVOYER
-               </button>
-             </form>
-             
-          </div>
 
+          <button class="subBtn">ENVOYER
+          </button>
+        </form>
 
-          <div class="card">
+      </div>
 
-           <img
-              src="images/contact.jpg"
-              class="card-img-top"
-              alt="Image pour le Contact"
-            />
+      <!-- Contact US -->
 
-            <div class="card-body">
-              <h5 class="card-title">Contact us</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
-                esse impedit.
-              </p>
-            </div>
-          </div>
+      <div class="contactContainer">
+
+        <img src="images/contact.jpg" class="card-img-top" alt="Image pour le Contact" />
+
+        <div class="card-body">
+          <h5 class="card-title">Contact us</h5>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+            esse impedit.
+          </p>
         </div>
       </div>
-    </main>
+    </div>
 
-<script src="script.js"></script>
+  </main>
+
+  <footer>
+    <div class="main_footer">
+      <div class="top_footer">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/WildCodeSchool/" title="logo facebook" class="fa fa-facebook"></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/wildcodeschool" title="logo twitter" class="fa fa-twitter"></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/school/wild-codes-chool" title="logo linkedin" class="fa fa-linkedin"></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/wildcodeschool_lyon/" title="logo instagram" class="fa fa-instagram"></a>
+          </li>
+          <li>
+            <a href="https://github.com/WildCodeSchool" class="fa fa-github" title="github"></a>
+          </li>
+          <li>
+            <a href="#" class="fa fa-envelope" title="Nous contacter"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="bottom_footer">
+        <a href="https://www.wildcodeschool.com/">
+          <img class="img_footer" src="images/logo-wild-bottom.png" alt="logo Wild Code School" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+
+  <!-- BOOTSTRAP LINKS -->
+
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script> -->
+
 </body>
+
 </html>
-
-
