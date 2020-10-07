@@ -273,22 +273,26 @@ select {
 input:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #f47173;
+  border: 4px solid #f47173;
+  transform: scale(1.2);
 }
 
 form button {
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   font-size: 1.3em;
-  background-color: var(--emphasis-color);
+  background-color: #fff;
   border: 1px solid grey;
-  margin-top: 20px;
+  margin-top: 0px;
+  border-radius: 15px;
 }
 
 form button:hover {
   cursor: pointer;
   border: 1px solid black;
   background-color: #f47173;
+  color: #fff;
+  transform: scale(1.1);
 }
 
 @media only screen and (min-width: 1200px) {
