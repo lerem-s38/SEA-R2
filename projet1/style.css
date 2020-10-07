@@ -19,17 +19,21 @@ body {
 }
 
 /* ---------------  HEAD  --------------------*/
+
 .sticky-top {
   width: 100%;
   height: 200px;
   background-color: rgb(244, 113, 115);
 }
+/* .menu-burger {
+  background-color:  #f47173;
+} */
+
 /* menu déroulant*/
 .sous-menu {
   display: none;
   list-style: none;
   background-color: white;
-  width: 20%;
   text-align: center;
   font-size: 50px;
   position: relative;
@@ -135,29 +139,6 @@ body {
   background-color: rgb(244, 113, 115);
 }
 
-/*
-.span1{
-  width: 40%;
-  height: 10px;
-  background-color: black;
-  margin: 10px;
-  border-radius: 10px;
-}
-.span2 {
-  width: 40%;
-  height: 10px;
-  background-color: black;
-  margin: 10px;
-  border-radius: 10px;
-}
-.span3 {
-  width: 40%;
-  height: 10px;
-  background-color: black;
-  margin: 10px;
-  border-radius: 10px;
-
-}*/
 /* logo WCS */
 .logo {
   display: block;
@@ -169,7 +150,6 @@ body {
   height: 200px;
 }
 /* bouton toggle*/
-
 .bouton-toggle {
   position: absolute;
   top: 0;
@@ -203,6 +183,45 @@ body {
 .formInstance p {
   background-color: #dbd7d9;
   text-align: center;
+}
+.card-body h5,
+p {
+  background-color: rgb(212, 209, 209);
+  text-align: center;
+  color: black;
+  text-shadow: 0 0 2px white;
+  padding: 10px;
+}
+
+.btnAddContenu1,
+.btnAddContenu2,
+.btnAddContenu3,
+.subBtn {
+  background-color: white;
+  padding: 10px;
+  border: 2px solid grey;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btnAddContenu1:hover,
+.btnAddContenu2:hover,
+.btnAddContenu3:hover,
+.subBtn:hover {
+  cursor: pointer;
+  background-color: rgb(244, 113, 115);
+  color: white;
+}
+.addContenu {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label {
+  margin: 5px;
 }
 
 /* ----------------------------------------------------- */
@@ -244,17 +263,7 @@ body {
   --shadow-one: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   --shadow-two: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   --shadow-three: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-
-  --filter-one: grayscale(100%) blur(1px);
-  --filter-two: grayscale(0) blur(0);
 }
-
-/* body {
-    background-color: var(--primary-color); 
-   justify-content: center;
-  display: flex;
-  align-items: center; 
-}  */
 
 .card {
   transition: 0.5s ease-in-out;

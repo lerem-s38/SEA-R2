@@ -51,19 +51,29 @@ function submitMsg(event) {
 
   let newDivCibleContenu = document.createElement('p');
   divCible.insertBefore(newDivCibleContenu, divCible.firstChild);
-  let textWilder = document.querySelector('.textarea').value;
+  let textWilder = divCible.querySelector('.textarea').value;
   newDivCibleContenu.innerText = textWilder;
 
   let newDivCibleHun = document.createElement('p');
   divCible.insertBefore(newDivCibleHun, divCible.firstChild);
-  let subjectWilder = document.querySelector('.selectInstance').value;
+  let subjectWilder = divCible.querySelector('.selectInstance').value;
   newDivCibleHun.innerText = subjectWilder;
 
   let newDivCibleHdeux = document.createElement('p');
   divCible.insertBefore(newDivCibleHdeux, divCible.firstChild);
-  let nameWilder = document.querySelector('.inputName').value;
+  let nameWilder = divCible.querySelector('.inputName').value;
   newDivCibleHdeux.innerText = nameWilder;
+
+  document.querySelector('form').reset();
+
+  let comment = {
+    author: nameWilder,
+    subject: subjectWilder,
+    comment: textWilder,
+  };
 }
+
+//-------------------LOCAL STORAGE COMMENTAIRES----------------
 
 // ------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------
@@ -118,10 +128,9 @@ function darkMode() {
   }
 }
 
-
 /* Evenement onclick animation menu burger*/
 const burger = document.querySelector('.burger');
 
 burger.addEventListener('click', () => {
-    burger.classList.toggle('active');
-})
+  burger.classList.toggle('active');
+});
