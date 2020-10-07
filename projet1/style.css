@@ -28,27 +28,28 @@ body {
 .sous-menu {
   display: none;
   list-style: none;
-  background-color: lightpink;
+  background-color: white;
   width: 20%;
   text-align: center;
   font-size: 50px;
   position: relative;
   width: 70%;
   height: 50vh;
-  padding-top: 80px;
+  padding-top: 100px;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
+  border: 4mm ridge rgb(244, 113, 115);
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.4);
 }
+
 .sous-menu li {
   padding: 10px;
   font-family: 'Courier New', Courier, monospace;
   margin-left: 125px;
   margin-right: 125px;
   text-emphasis: none;
-  border: 1px dashed black;
-  border-radius: 20px;
-  margin-bottom: 20px;
+  border-top: 1px solid black;
+  padding: 50px;
 }
 
 .sous-menu li a {
@@ -72,6 +73,56 @@ body {
   background-color: #ed3572;
   font-weight: 800;
 }
+
+/*----------------------------------------------------*/
+.burger {
+  width: 50px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+}
+
+.burger span {
+  width: 100%;
+  height: 7px;
+  background-color: black;
+  display: block;
+  transform: translateY(-50%);
+  transition: background-color 0.5s ease-in-out;
+  padding-right: 50px;
+}
+
+.burger span::before,
+.burger span::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 7px;
+  background-color: black;
+  transition: transform 0.5s ease-in-out;
+}
+
+.burger span::before {
+  transform: translateY(-10px);
+}
+
+.burger span::after {
+  transform: translateY(10px);
+}
+
+.burger.active span {
+  background-color: transparent;
+}
+
+.burger.active span::before {
+  transform: translateY(0px) rotateZ(45deg);
+}
+
+.burger.active span::after {
+  transform: translateY(0px) rotateZ(-45deg);
+}
+
+/*  ------------------------------------------------  */
 .visible {
   display: block;
 }
@@ -85,7 +136,9 @@ body {
   align-items: center;
   background-color: rgb(244, 113, 115);
 }
-.span1 {
+
+/*
+.span1{
   width: 40%;
   height: 10px;
   background-color: black;
@@ -105,7 +158,8 @@ body {
   background-color: black;
   margin: 10px;
   border-radius: 10px;
-}
+
+}*/
 /* logo WCS */
 .logo {
   display: block;

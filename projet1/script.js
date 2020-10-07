@@ -120,3 +120,11 @@ function darkMode() {
     document.location.reload(); //recharge la page
   }
 }
+
+
+/* Evenement onclick animation menu burger*/
+const burger = document.querySelector('.burger');
+
+burger.addEventListener('click', () => {
+    burger.classList.toggle('active');
+})
