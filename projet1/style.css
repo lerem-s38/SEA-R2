@@ -256,28 +256,99 @@ label {
   padding-bottom: 10px;
 }
 
-/* ----------css About us ---------------------------- */
-:root {
-  --primary-color: #f1f1f1;
-
-  --shadow-one: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  --shadow-two: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  --shadow-three: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+/* ----------------Contact us -------*/
+input,
+label {
+  display: block;
 }
 
-.card {
-  transition: 0.5s ease-in-out;
-  background-color: var(--primary-color);
+label {
+  margin-bottom: 5px;
+}
 
+input,
+textarea,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 2px solid #000000;
+  outline: none;
+}
+
+/* select {
+  appearance: none;
+} */
+
+input:focus,
+textarea:focus,
+select:focus {
+  border: 4px solid #f47173;
+  transform: scale(1.2);
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.3em;
+  background-color: #fff;
+  border: 1px solid grey;
+  margin-top: 0px;
+  border-radius: 15px;
+}
+
+form button:hover {
   cursor: pointer;
+  border: 1px solid black;
+  background-color: #f47173;
+  color: #fff;
+  transform: scale(1.2);
 }
 
-.card:hover {
-  transition: 0.2s ease-in-out;
-  transform: scale(0.9);
-  -webkit-box-shadow: var(--shadow-one);
-  -moz-box-shadow: var(--shadow-two);
-  box-shadow: var(--shadow-three);
+@media only screen and (min-width: 1200px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .fields-container {
+    width: 600px;
+  }
 }
 
-/* css About */
+@media only screen and (min-width: 600px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fields-container {
+    width: 600px;
+  }
+}
+
+@media only screen and (min-width: 350px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fields-container {
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fields-container {
+    width: 300px;
+  }
+}

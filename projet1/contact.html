@@ -10,80 +10,92 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Wilder's box</title>
   </head>
   <body>
-    <div class="sticky-top">
-      <header>
-        <nav></nav>
+    <section>
+      <form>
+        <h4>Contact us</h4>
+        <div class="fields-container">
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+          <label for="First name">First name</label>
+          <input type="First name" id="firstname" />
+          <label for="Second name">Second name</label>
+          <input type="Second name" id="Second name" />
 
-        <div class="logo">
-          <a href="index.html">
-            <img
-              class="miniatureBurger"
-              src="https://i.ibb.co/Y2z15WH/pngegg.png"
-              alt="pngegg"
-          /></a>
-
-          <img
-            class="logoWcs"
-            src="https://www.wildcodeschool.com/assets/logo_white-b3ba5f88186df8d04f5ef8be4c3cc057a49f77b25b2359c4f4b3b13c53e5aeb8.png"
-            alt="Logo Wild Code School"
-          />
-
-          <button id="dark-mode">Switch to dark mode</button>
+          <label for="subject">Subject</label>
+          <select id="subject">
+            <option>JavaScript</option>
+            <option>HTML / CSS</option>
+            <option>Git / Github</option>
+            <option>Other suggestion</option>
+          </select>
+          <label for="message">Message</label>
+          <textarea placeholder="Your message" rows="5"></textarea>
+          <button type="submit">Send !</button>
         </div>
-      </header>
-    </div>
-    <main class="backgroundBodyContact">
-      <div class="container" id="contactFormulaire">
-        <form class="contactForm">
-          <div class="row">
-            <div class="col">
-              <label for="firstname">First name</label>
-              <input type="text" class="form-control" placeholder="John" />
-            </div>
-            <div class="col">
-              <label for="lastname">Last name</label>
-              <input type="text" class="form-control" placeholder="DOE" />
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlInput1">Email address</label>
-            <input
-              type="email"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="name@example.com"
+      </form>
+    </section>
+    <footer>
+      <div class="main_footer">
+        <div class="top_footer">
+          <ul>
+            <li>
+              <a
+                href="https://www.facebook.com/WildCodeSchool/"
+                title="logo facebook"
+                class="fa fa-facebook"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/wildcodeschool"
+                title="logo twitter"
+                class="fa fa-twitter"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/school/wild-codes-chool"
+                title="logo linkedin"
+                class="fa fa-linkedin"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/wildcodeschool_lyon/"
+                title="logo instagram"
+                class="fa fa-instagram"
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/WildCodeSchool"
+                class="fa fa-github"
+                title="github"
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="fa fa-envelope" title="Nous contacter"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="bottom_footer">
+          <a href="https://www.wildcodeschool.com/">
+            <img
+              class="img_footer"
+              src="images/logo-wild-bottom.png"
+              alt="logo Wild Code School"
             />
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlSelect1">Subject</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-              <option>JavaScript</option>
-              <option>HTML / CSS</option>
-              <option>Git / Github</option>
-              <option>Other suggestion</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Your message</label>
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-            ></textarea>
-          </div>
-
-          <button type="button" class="btn btn-secondary btn-lg btn-block">
-            Submit
-          </button>
-        </form>
+          </a>
+        </div>
       </div>
-    </main>
-
-    <footer></footer>
+    </footer>
 
     <script src="script.js"></script>
     <script
