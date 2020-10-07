@@ -39,7 +39,6 @@ function showHide(event) {
   }
 }
 
-
 let btnSub = document.querySelectorAll('.subBtn');
 for (i = 0; i < btnSub.length; i++) {
   btnSub[i].addEventListener('click', submitMsg);
@@ -52,21 +51,29 @@ function submitMsg(event) {
 
   let newDivCibleContenu = document.createElement('p');
   divCible.insertBefore(newDivCibleContenu, divCible.firstChild);
-  let textWilder = document.querySelector('.textarea').value;
+  let textWilder = divCible.querySelector('.textarea').value;
   newDivCibleContenu.innerText = textWilder;
 
   let newDivCibleHun = document.createElement('p');
   divCible.insertBefore(newDivCibleHun, divCible.firstChild);
-  let subjectWilder = document.querySelector('.selectInstance').value;
+  let subjectWilder = divCible.querySelector('.selectInstance').value;
   newDivCibleHun.innerText = subjectWilder;
 
   let newDivCibleHdeux = document.createElement('p');
   divCible.insertBefore(newDivCibleHdeux, divCible.firstChild);
-  let nameWilder = document.querySelector('.inputName').value;
+  let nameWilder = divCible.querySelector('.inputName').value;
   newDivCibleHdeux.innerText = nameWilder;
 
+  document.querySelector('form').reset();
 
+  let comment = {
+    author: nameWilder,
+    subject: subjectWilder,
+    comment: textWilder,
+  };
 }
+
+//-------------------LOCAL STORAGE COMMENTAIRES----------------
 
 // ------------------------------------------------------------------------------
 // ------------------------------------------------------------------------------
@@ -77,7 +84,9 @@ function submitMsg(event) {
 document.getElementById('dark-mode').addEventListener('click', darkMode);
 // recuperation etat mode sombre dans local storage
 let darkModeState = localStorage.getItem('modeSombre');
-console.log(darkModeState);
+console.log(
+  `State darkMode from local storage when the page loads : ${darkModeState}`
+);
 
 if (typeof localStorage != 'undefined') {
   //si mode sombre activé, application du theme sombre et stockage de l'etat dans localStorage
@@ -104,9 +113,7 @@ if (typeof localStorage != 'undefined') {
 function darkMode() {
   if (darkModeState === 'desactivated') {
     //activation mode sombre
-    let darkModeCard = document.querySelectorAll(
-      '.card-body, .backgroundBodyContact'
-    );
+    let darkModeCard = document.querySelectorAll('.card-body, .sticky-top');
     for (var i = 0; i < darkModeCard.length; i++) {
       darkModeCard[i].classList.toggle('dark-mode');
     }
@@ -121,10 +128,9 @@ function darkMode() {
   }
 }
 
-
 /* Evenement onclick animation menu burger*/
 const burger = document.querySelector('.burger');
 
 burger.addEventListener('click', () => {
-    burger.classList.toggle('active');
-})
+  burger.classList.toggle('active');
+});

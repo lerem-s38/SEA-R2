@@ -18,19 +18,22 @@ body {
   color: white;
 }
 
-
 /* ---------------  HEAD  --------------------*/
-.sticky-top{
+
+.sticky-top {
   width: 100%;
   height: 200px;
-  background-color:  rgb(244, 113, 115);
+  background-color: rgb(244, 113, 115);
 }
+/* .menu-burger {
+  background-color:  #f47173;
+} */
+
 /* menu déroulant*/
-.sous-menu{
+.sous-menu {
   display: none;
   list-style: none;
   background-color: white;
-  width: 20%;
   text-align: center;
   font-size: 50px;
   position: relative;
@@ -40,10 +43,9 @@ body {
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   border: 4mm ridge rgb(244, 113, 115);
-  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .4);
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.4);
 }
-
-.sous-menu li{
+.sous-menu li {
   padding: 10px;
   font-family: 'Courier New', Courier, monospace;
   margin-left: 125px;
@@ -53,27 +55,27 @@ body {
   padding: 50px;
 }
 
-.sous-menu li a{
+.sous-menu li a {
   text-decoration: none;
   color: black;
 }
+.link1:hover {
+  background-color: #f9d10f;
+  font-weight: 800;
+}
+.link2:hover {
+  background-color: #3b4d61;
+  font-weight: 800;
+}
+.link3:hover {
+  background-color: #ff6e40;
+  font-weight: 800;
+}
+.link4:hover {
+  background-color: #ed3572;
+  font-weight: 800;
+}
 
-.link1:hover{
-  background-color: #F9D10F;
-  font-weight: 800;
-}
-.link2:hover{
-  background-color: #3B4D61;
-  font-weight: 800;
-}
-.link3:hover{
-  background-color: #FF6E40;
-  font-weight: 800;
-}
-.link4:hover{
-  background-color: #ED3572;
-  font-weight: 800;
-}
 /*----------------------------------------------------*/
 .burger {
   /*position: relative;
@@ -100,7 +102,8 @@ body {
   padding-right: 50px;
 }
 
-.burger span::before, .burger span::after{
+.burger span::before,
+.burger span::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -109,31 +112,28 @@ body {
   transition: transform 0.5s ease-in-out;
 }
 
-.burger span::before{
+.burger span::before {
   transform: translateY(-10px);
 }
 
-.burger span::after{
+.burger span::after {
   transform: translateY(10px);
 }
 
-.burger.active span{
+.burger.active span {
   background-color: transparent;
 }
 
-.burger.active span::before{
+.burger.active span::before {
   transform: translateY(0px) rotateZ(45deg);
 }
 
-.burger.active span::after{
+.burger.active span::after {
   transform: translateY(0px) rotateZ(-45deg);
 }
 
-
-
-
 /*  ------------------------------------------------  */
-.visible{
+.visible {
   display: block;
 }
 .btn {
@@ -147,115 +147,33 @@ body {
   background-color: rgb(244, 113, 115);
 }
 
-/*
-.span1{
-  width: 40%;
-  height: 10px;
-  background-color: black;
-  margin: 10px;
-  border-radius: 10px;
-
-}
-.span2{
-  width: 40%;
-  height: 10px;
-  background-color: black;
-  margin: 10px;
-  border-radius: 10px;
- 
-}
-.span3{
-  width: 40%;
-  height: 10px;
-  background-color: black;
-  margin: 10px;
-  border-radius: 10px;
-
-}*/
 /* logo WCS */
-.logo{
+.logo {
   display: block;
   position: absolute;
   top: 0;
   margin-left: 35%;
 }
-.logo img{
+.logo img {
   height: 200px;
 }
 /* bouton toggle*/
-/* The switch - the box around the slider */
-.bouton-toggle{
+.bouton-toggle {
   position: absolute;
   top: 0;
   right: 0;
   margin-top: 80px;
   margin-right: 100px;
 }
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-input:checked + .slider {
-  background-color: #2196F3;
-}
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-.slider.round:before {
-  border-radius: 50%;
-}
 
-
-.card-img-top {
+/* .card-img-top {
   width: 100%;
-}
-
-
+} */
 
 /* ---------------  FORMULAIRE AJOUT CONTENU  --------------------*/
 
 .formInstance {
-  display: none; 
+  display: none;
 }
 
 .formContainer {
@@ -274,50 +192,55 @@ input:checked + .slider:before {
   background-color: #dbd7d9;
   text-align: center;
 }
+.card-body h5,
+p {
+  background-color: rgb(212, 209, 209);
+  text-align: center;
+  color: black;
+  text-shadow: 0 0 2px white;
+  padding: 10px;
+}
 
+.btnAddContenu1,
+.btnAddContenu2,
+.btnAddContenu3,
+.subBtn {
+  background-color: white;
+  padding: 10px;
+  border: 2px solid grey;
+  text-align: center;
+  border-radius: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.btnAddContenu1:hover,
+.btnAddContenu2:hover,
+.btnAddContenu3:hover,
+.subBtn:hover {
+  cursor: pointer;
+  background-color: rgb(244, 113, 115);
+  color: white;
+}
+.addContenu {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label {
+  margin: 5px;
+}
 
 /* ----------------------------------------------------- */
-/* SECTION ABOUT US */
-.card {
-  -webkit-filter: grayscale(100%) blur(0px);
-  filter: var(--filter-one);
-  transition: 0.5s ease-in-out;
-  background-color: var(--primary-color);
-
-  cursor: pointer;
-}
-
-.card:hover {
-  -webkit-filter: grayscale(0) blur(0);
-  filter: (var) --filter-two;
-  transition: 0.2s ease-in-out;
-  transform: scale(0.9);
-  -webkit-box-shadow: var(--shadow-one);
-  -moz-box-shadow: var(--shadow-two);
-  box-shadow: var(--shadow-three);
-}
-
-:root {
-  --primary-color: #f1f1f1;
-
-  --shadow-one: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  --shadow-two: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-  --shadow-three: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-
-  --filter-one: grayscale(100%) blur(1px);
-  --filter-two: grayscale(0) blur(0);
-}
-
-
-
-
 
 /* ---------------  FOOTER  --------------------*/
 .main_footer {
-  background-color: #F47173;
+  background-color: #f47173;
 }
 .top_footer {
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 .fa {
   color: white;
@@ -331,11 +254,38 @@ input:checked + .slider:before {
 }
 .top_footer ul li a {
   font-size: 5vh;
+  text-decoration: none;
 }
 .bottom_footer img {
-  max-height: 40px;
+  max-height: 80px;
 }
 .bottom_footer {
   text-align: center;
   padding-bottom: 10px;
 }
+
+/* ----------css About us ---------------------------- */
+:root {
+  --primary-color: #f1f1f1;
+
+  --shadow-one: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  --shadow-two: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  --shadow-three: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.card {
+  transition: 0.5s ease-in-out;
+  background-color: var(--primary-color);
+
+  cursor: pointer;
+}
+
+.card:hover {
+  transition: 0.2s ease-in-out;
+  transform: scale(0.9);
+  -webkit-box-shadow: var(--shadow-one);
+  -moz-box-shadow: var(--shadow-two);
+  box-shadow: var(--shadow-three);
+}
+
+/* css About */
