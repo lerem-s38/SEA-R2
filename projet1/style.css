@@ -41,7 +41,6 @@ body {
   border: 4mm ridge rgb(244, 113, 115);
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.4);
 }
-
 .sous-menu li {
   padding: 10px;
   font-family: 'Courier New', Courier, monospace;
@@ -56,7 +55,6 @@ body {
   text-decoration: none;
   color: black;
 }
-
 .link1:hover {
   background-color: #f9d10f;
   font-weight: 800;
@@ -215,6 +213,7 @@ body {
 }
 .top_footer {
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 .fa {
   color: white;
@@ -228,9 +227,10 @@ body {
 }
 .top_footer ul li a {
   font-size: 5vh;
+  text-decoration: none;
 }
 .bottom_footer img {
-  max-height: 40px;
+  max-height: 80px;
 }
 .bottom_footer {
   text-align: center;
