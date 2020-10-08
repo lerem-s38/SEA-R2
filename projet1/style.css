@@ -12,6 +12,8 @@ body {
     'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
 }
 
+
+
 /* ---------------  DARKMODE  --------------------*/
 .dark-mode {
   background-color: black;
@@ -25,6 +27,7 @@ body {
   height: 200px;
   background-color: rgb(244, 113, 115);
 }
+
 /* .menu-burger {
   background-color:  #f47173;
 } */
@@ -45,6 +48,7 @@ body {
   border: 4mm ridge rgb(244, 113, 115);
   box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.4);
 }
+
 .sous-menu li {
   padding: 10px;
   font-family: 'Courier New', Courier, monospace;
@@ -59,18 +63,22 @@ body {
   text-decoration: none;
   color: black;
 }
+
 .link1:hover {
   background-color: #f9d10f;
   font-weight: 800;
 }
+
 .link2:hover {
   background-color: #3b4d61;
   font-weight: 800;
 }
+
 .link3:hover {
   background-color: #ff6e40;
   font-weight: 800;
 }
+
 .link4:hover {
   background-color: #ed3572;
   font-weight: 800;
@@ -128,6 +136,7 @@ body {
 .visible {
   display: block;
 }
+
 .btn {
   width: 20%;
   height: 200px;
@@ -146,9 +155,11 @@ body {
   top: 0;
   margin-left: 35%;
 }
+
 .logo img {
   height: 200px;
 }
+
 /* bouton toggle*/
 .bouton-toggle {
   position: absolute;
@@ -162,6 +173,16 @@ body {
   width: 100%;
 } */
 
+/* ---------------- PARTIE BANDEAUX PAGE D'ACCUEIL ------------- */
+.panelImage {
+  cursor: pointer;
+  height: 200px;
+}
+
+.panelText {
+  display: none;
+  height: 300px;
+}
 /* ---------------  FORMULAIRE AJOUT CONTENU  --------------------*/
 
 .formInstance {

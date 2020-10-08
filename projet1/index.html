@@ -16,44 +16,39 @@
 
   <body>
     <header>
-    <div class="sticky-top">
-      <div class="menu-burger">
-        <button class="btn">
-           <span class="span1"></span>
-           <span class="span2"></span>
-           <span class="span3"></span>
-           <div class="burger">
-             <span></span>
-           </div>
-         </button>
+      <div class="sticky-top">
+        <div class="menu-burger">
+          <button class="btn">
+            <span class="span1"></span>
+            <span class="span2"></span>
+            <span class="span3"></span>
+            <div class="burger">
+              <span></span>
+            </div>
+          </button>
 
-        <ul>
-          <div class="sous-menu">
-            <li class="link1"><a href="#"></a>JavaScript</li>
-            <li class="link2"><a href="#"></a>Git/Github</li>
-            <li class="link3"><a href="contact.html">Contact Us</a></li>
-            <li class="link4"><a href="aboutUs.html">About Us</a></li>
-          </div>
-        </ul>
+          <ul>
+            <div class="sous-menu">
+              <li class="link1"><a href="#"></a>JavaScript</li>
+              <li class="link2"><a href="#"></a>Git/Github</li>
+              <li class="link3"><a href="contact.html">Contact Us</a></li>
+              <li class="link4"><a href="aboutUs.html">About Us</a></li>
+            </div>
+          </ul>
+        </div>
+
+        <div class="logo">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/fr/e/e4/WildCodeSchool_logo_pink_background_400x220.png"
+            alt="Logo de la Wild Code School"
+          />
+        </div>
+
+        <div class="bouton-toggle">
+          <button id="dark-mode">Switch to dark mode</button>
+        </div>
       </div>
-
-      <div class="logo">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/fr/e/e4/WildCodeSchool_logo_pink_background_400x220.png"
-          alt="Logo de la Wild Code School"
-        />
-      </div>
-
-      
-    
-
-
-        
-      <div class="bouton-toggle">
-        <button id="dark-mode">Switch to dark mode</button>
-      </div>
-    </div>
-  </header>
+    </header>
     <main>
       <div>
         <!-- PARTIE IMAGE  A TRAVAILLER EN PARALLAX -->
@@ -71,16 +66,16 @@
         </picture>
       </div>
 
-      <!-- CARD DECK -->
+      <!-- --------------------- BANDES ACCUEIL ----------------------------- -->
 
-      <!--  <div class="card-deck"></div> -->
-      <!-- JAVASCRIPT -->
-
-      <div class="jsContainer">
-        <img src="images/Javascript.jpg" class="card-img-top" alt="LOGO JavaScript" />
-        <div class="card-body">
-          <h5 class="card-title">JavaScript</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet.</p>
+      <!-- --------------JAVASCRIPT ------------------->
+      <div class="accordion">
+        <div class="panel panelImage jsContainer">
+          <img src="images/Javascript.jpg" alt="LOGO JavaScript" />
+        </div>
+        <div class="panel panelText">
+          <h5>JavaScript</h5>
+          <p>Derniers ajouts</p>
           <div class="addContenu">
             <button type="submit" class="btnAddContenu1">PARTICIPER !</button>
           </div>
@@ -108,24 +103,17 @@
               <button class="subBtn">ENVOYER</button>
             </div>
           </form>
-
         </div>
       </div>
 
-      <!-- HTML -->
-
-      <div class="htmlContainer">
-        <img
-          src="images/html_css.jpg"
-          class="card-img-top"
-          alt="LOGO HTML et LOGO CSS"
-        />
-        <div class="card-body">
-          <h5 class="card-title">HTML / CSS</h5>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-            voluptatum natus et.
-          </p>
+      <!-- -----------------HTML------------------------ -->
+      <div class="accordion">
+        <div class="panel panelImage htmlContainer">
+          <img src="images/html_css.jpg" alt="LOGO HTML et LOGO CSS" />
+        </div>
+        <div class="panel panelText">
+          <h5>HTML / CSS</h5>
+          <p>Derniers ajouts</p>
           <div class="addContenu">
             <button type="submit" class="btnAddContenu2">ADD CONTENU</button>
             <button type="submit" class="closeSubmit2">X</button>
@@ -157,157 +145,50 @@
         </div>
       </div>
 
-      <!-- GIT GIT/HUB -->
-
-      <div class="gitContainer">
-        <img
-          src="images/git_github.jpg"
-          class="card-img-top"
-          alt="Logos Git et Github"
-        />
-        <div class="card-body">
-          <h5 class="card-title">Git et Github</h5>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Exercitationem ipsam porro hic alias quos ad quia perspiciatis
-            quaerat tempora ipsum!
-          </p>
+      <!-- ---------------GIT GIT/HUB---------------- -->
+      <div class="accordion">
+        <div class="panel panelImage gitContainer">
+          <img src="images/git_github.jpg" alt="Logos Git et Github" />
+        </div>
+        <div class="panel panelText">
+          <h5>Git et Github</h5>
+          <p>Derniers ajouts</p>
           <div class="addContenu">
-            <button type="submit" class="btnAddContenu3">ADD CONTENU</button>
-            <button type="submit" class="closeSubmit3">X</button>
+            <button type="submit" class="btnAddContenu3">PARTICIPER !</button>
           </div>
 
-    <div class="htmlContainer">
-      <img src="images/html_css.jpg" class="card-img-top" alt="LOGO HTML et LOGO CSS" />
-      <div class="card-body">
-        <h5 class="card-title">HTML / CSS</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-          voluptatum natus et.
-        </p>
-        <div class="addContenu">
-          <button type="submit" class="btnAddContenu2">PARTICIPER !</button>
+          <form class="formInstance">
+            <div class="formContainer">
+              <label class="labelInstance"> Votre suggestion : </label>
 
+              <select class="selectInstance">
+                <option value="Liste des sujet">Sujets</option>
+                <option value="Astuce">Astuce</option>
+                <option value="Code brut">Code brut</option>
+                <option value="Bonne pratique">Bonne pratique</option>
+                <option value="signaler un bug">signaler un bug</option>
+              </select>
+
+              <label class="labelName"> Votre prénom: </label>
+
+              <input class="inputName" type="text" name="input_name" />
+
+              <label class="labelMsg">Votre message: </label>
+
+              <textarea class="textarea" name="input_msg"> </textarea>
+
+              <button class="subBtn">ENVOYER</button>
+            </div>
+          </form>
         </div>
-
-        <form class="formInstance">
-          <div class="formContainer">
-            <label class="labelInstance">
-
-            </label>
-
-            <select class="selectInstance">
-              <option value="Liste des sujet">
-                Sujet
-              </option>
-              <option value="Astuce">
-                Astuce</option>
-              <option value="Code brut">
-                Code brut
-              </option>
-              <option value="Bonne pratique">
-                Bonne pratique
-              </option>
-              <option value="signaler un bug">
-                signaler un bug
-              </option>
-            </select>
-
-            <label class="labelName">
-              Votre prénom:
-            </label>
-
-            <input class="inputName" type="text" name="input_name">
-
-            <label class="labelMsg">Votre message:
-            </label>
-
-            <textarea class="textarea" name="input_msg">
-                 </textarea>
-
-            <button class="subBtn">ENVOYER
-            </button>
-          </div>
-        </form>
-
-
-            <input class="inputName" type="text" name="input_name" />
-
-            <label class="labelMsg">Entrer votre message: </label>
-
-            <textarea class="textarea" name="input_msg"> </textarea>
-
-    <!-- GIT GIT/HUB -->
-
-    <div class="gitContainer">
-      <img src="images/git_github.jpg" class="card-img-top" alt="Logos Git et Github" />
-      <div class="card-body">
-        <h5 class="card-title">Git et Github</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Exercitationem ipsam porro hic alias quos ad quia perspiciatis
-          quaerat tempora ipsum!
-        </p>
-        <div class="addContenu">
-          <button type="submit" class="btnAddContenu3">PARTICIPER !</button>
-
-        </div>
-
-        <form class="formInstance">
-          <div class="formContainer">
-            <label class="labelInstance">
-              Votre suggestion :
-            </label>
-
-            <select class="selectInstance">
-              <option value="Liste des sujet">
-                Sujets
-              </option>
-              <option value="Astuce">
-                Astuce</option>
-              <option value="Code brut">
-                Code brut
-              </option>
-              <option value="Bonne pratique">
-                Bonne pratique
-              </option>
-              <option value="signaler un bug">
-                signaler un bug
-              </option>
-            </select>
-
-            <label class="labelName">
-              Votre prénom:
-            </label>
-
-            <input class="inputName" type="text" name="input_name">
-
-            <label class="labelMsg">Votre message:
-            </label>
-
-            <textarea class="textarea" name="input_msg">
-               </textarea>
-
-            <button class="subBtn">ENVOYER
-            </button>
-          </div>
-        </form>
-
       </div>
 
-      <!-- Contact US -->
+      <!-- --------------Contact US--------------------- -->
 
       <div class="contactContainer">
-
-        <img src="images/contact.jpg" class="card-img-top" alt="Image pour le Contact" />
-
-        <div class="card-body">
-          <h5 class="card-title">Contact us</h5>
-          <p class="card-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
-            esse impedit.
-          </p>
-        </div>
+        <a href="contact.html"
+          ><img src="images/contact.jpg" alt="Image pour le Contact"
+        /></a>
       </div>
     </main>
 

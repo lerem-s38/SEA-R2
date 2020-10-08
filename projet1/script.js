@@ -18,6 +18,23 @@ function burger() {
     statut.style.display = 'none';
   }
 } */
+
+// ----------- SCRIPT POUR ACCORDEON ACCUEIL ------------//
+let panels = document.getElementsByClassName('panel');
+
+for (let i = 0; i < panels.length; i++) {
+  panels[i].addEventListener('click', displayPanel);
+}
+function displayPanel() {
+  let selectedPanel = this.nextElementSibling;
+  if (selectedPanel.style.display === 'block') {
+    selectedPanel.style.display = 'none';
+  } else {
+    selectedPanel.style.display = 'block';
+  }
+}
+// ----------- FIN DU SCRIPT POUR ACCORDEON ACCUEIL ------------//
+
 let tabBtnAdd = [
   document.querySelector('.btnAddContenu1'),
   document.querySelector('.btnAddContenu2'),
