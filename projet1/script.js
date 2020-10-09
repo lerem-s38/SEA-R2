@@ -7,18 +7,6 @@ dropdownBtn.addEventListener('click', function () {
   dropdownMenu.classList.toggle('visible');
 });
 
-/* const burgerMenu = document.querySelector('.button-burger');
-burgerMenu.addEventListener('click', burger);
-
-function burger() {
-  let statut = document.querySelector('.sous-menu');
-  if (statut.style.display === 'none') {
-    statut.style.display = 'block';
-  } else {
-    statut.style.display = 'none';
-  }
-} */
-
 // ----------- SCRIPT POUR ACCORDEON ACCUEIL ------------//
 let panels = document.getElementsByClassName('panel');
 
@@ -48,7 +36,6 @@ for (i = 0; i < tabBtnAdd.length; i++) {
 function showHide(event) {
   let cible =
     event.target.parentNode.parentNode.lastChild.previousSibling.style;
-  console.log(cible);
   if (cible.display === '') {
     cible.display = 'block';
   } else if ((cible.display = 'block')) {
@@ -109,10 +96,12 @@ if (typeof localStorage != 'undefined') {
   //si mode sombre activé, application du theme sombre et stockage de l'etat dans localStorage
   if (darkModeState === 'activate') {
     let darkModeCard = document.querySelectorAll(
-      '.card-body, .backgroundBodyContact'
+      '.accordion, .formContainer, form'
     );
+    let darkModeCard2 = document.querySelectorAll('.textarea, .inputName, select, p')
     for (var i = 0; i < darkModeCard.length; i++) {
       darkModeCard[i].classList.toggle('dark-mode');
+      darkModeCard2[i].classList.toggle("dark-mode2")
     }
     localStorage.setItem('modeSombre', 'activate');
     console.log(localStorage.getItem('modeSombre'));
@@ -130,9 +119,11 @@ if (typeof localStorage != 'undefined') {
 function darkMode() {
   if (darkModeState === 'desactivated') {
     //activation mode sombre
-    let darkModeCard = document.querySelectorAll('.card-body, .sticky-top');
+    let darkModeCard = document.querySelectorAll('.accordion, form, .formContainer');
+    let darkModeCard2 = document.querySelectorAll('.textarea, .inputName, select, p')
     for (var i = 0; i < darkModeCard.length; i++) {
       darkModeCard[i].classList.toggle('dark-mode');
+      darkModeCard2[i].classList.toggle("dark-mode2")
     }
     localStorage.setItem('modeSombre', 'activate');
     darkModeState = 'activated';
@@ -151,3 +142,9 @@ const burger = document.querySelector('.burger');
 burger.addEventListener('click', () => {
   burger.classList.toggle('active');
 });
+
+
+
+
+
+

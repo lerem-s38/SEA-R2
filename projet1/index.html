@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
@@ -8,173 +8,169 @@
 
   <!-- LINK BOOTSTRAP -->
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" /> -->
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
 </head>
 
 <body>
-  <header>
-    <div class="sticky-top">
-      <div class="menu-burger">
-        <button class="btn">
-          <span class="span1"></span>
-          <span class="span2"></span>
-          <span class="span3"></span>
-          <div class="burger">
-            <span></span>
-          </div>
-        </button>
+  <div class="sticky-top">
 
+    <div class="menu-burger">
+      <button class="btn">
+        <div class="burger">
+          <span></span>
+        </div>
+      </button>
+
+
+
+
+      <div class="sous-menu">
         <ul>
-          <div class="sous-menu">
-            <li class="link1"><a href="#"></a>JavaScript</li>
-            <li class="link2"><a href="#"></a>Git/Github</li>
-            <li class="link3"><a href="contact.html">Contact Us</a></li>
-            <li class="link4"><a href="aboutUs.html">About Us</a></li>
-          </div>
+          <li class="link2"><a href="https://odyssey.wildcodeschool.com/"></a>Odyssey</li>
+          <li class="link3"><a href="contact.html">Contact Us</a></li>
+          <li class="link4"><a href="aboutUs.html">About Us</a></li>
         </ul>
       </div>
-
-      <div class="logo">
-        <img src="https://upload.wikimedia.org/wikipedia/fr/e/e4/WildCodeSchool_logo_pink_background_400x220.png"
-          alt="Logo de la Wild Code School" />
-      </div>
-
-      <div class="bouton-toggle">
-        <button id="dark-mode">Switch to dark mode</button>
-      </div>
     </div>
-  </header>
-  <main>
-    <div>
-      <!-- PARTIE IMAGE  A TRAVAILLER EN PARALLAX -->
 
-      <picture class="campus">
-        <source media="(min-width:1200px)" srcset="https://i.imgur.com/rI3owr7.png" />
-        <source media="(min-width:600px)" srcset="https://i.imgur.com/9PYVZE5.png" />
-        <!-- METTRE IMAGE PAR DEFAUT-->
-      </picture>
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/fr/e/e4/WildCodeSchool_logo_pink_background_400x220.png"
+        alt="Logo de la Wild Code School">
+    </div>
+
+    <div class="bouton-toggle">
+      <button id="dark-mode">DarkMod</button>
+    </div>
+  </div>
+
+  <main>
+    <div class="panel panelImage logoWcs">
+      <!-- PARTIE IMAGE  A TRAVAILLER EN PARALLAX -->
+      <img src="images/wcs.jpg" alt="logo wcs">
     </div>
 
     <!-- --------------------- BANDES ACCUEIL ----------------------------- -->
 
     <!-- --------------JAVASCRIPT ------------------->
-    <div class="accordion">
-      <div class="panel panelImage jsContainer">
-        <img src="images/Javascript.jpg" alt="LOGO JavaScript" />
-      </div>
-      <div class="panel panelText">
-
-        <p>Derniers ajouts</p>
-        <div class="addContenu">
-          <button type="submit" class="btnAddContenu1">PARTICIPER !</button>
+    <div class="containerDesktop">
+      <div class="accordion">
+        <div class="panel panelImage jsContainer">
+          <img src="images/javascript.jpg" alt="LOGO JavaScript" />
         </div>
+        <div class="panel panelText">
 
-        <form class="formInstance">
-          <div class="formContainer">
-            <label class="labelInstance"> Choisissez un sujet: </label>
-
-            <select class="selectInstance">
-              <option value="Liste des sujet">Liste des sujet</option>
-              <option value="Astuce">Astuce</option>
-              <option value="Code brut">Code brut</option>
-              <option value="Bonne pratique">Bonne pratique</option>
-              <option value="signaler un bug">signaler un bug</option>
-            </select>
-
-            <label class="labelName"> Entrer votre prénom: </label>
-
-            <input class="inputName" type="text" name="input_name" />
-
-            <label class="labelMsg">Entrer votre message: </label>
-
-            <textarea class="textarea" name="input_msg"> </textarea>
-
-            <button class="subBtn">ENVOYER</button>
+          <p>Latest News</p>
+          <div class="addContenu">
+            <button type="submit" class="btnAddContenu1">ADD</button>
           </div>
-        </form>
-      </div>
-    </div>
 
-    <!-- -----------------HTML------------------------ -->
-    <div class="accordion">
-      <div class="panel panelImage htmlContainer">
-        <img src="images/html_css.jpg" alt="LOGO HTML et LOGO CSS" />
-      </div>
-      <div class="panel panelText">
-        <p>Derniers ajouts</p>
-        <div class="addContenu">
-          <button type="submit" class="btnAddContenu2">ADD CONTENU</button>
+          <form class="formInstance">
+            <div class="formContainer">
+              <label class="labelInstance"> Choose a subject : </label>
+
+              <select class="selectInstance">
+                <option value="Liste des sujet">Subjects list</option>
+                <option value="Astuce">Tips</option>
+                <option value="Code brut">Raw Code</option>
+                <option value="Bonne pratique">Best Practices</option>
+                <option value="signaler un bug">Report Bug</option>
+              </select>
+
+              <label class="labelName"> Enter your Name </label>
+
+              <input class="inputName" type="text" name="input_name" />
+
+              <label class="labelMsg">Enter your Message </label>
+
+              <textarea class="textarea" name="input_msg"> </textarea>
+
+              <button class="subBtn">PUSH</button>
+            </div>
+          </form>
         </div>
-
-        <form class="formInstance">
-          <div class="formContainer">
-            <label class="labelInstance"> Choisissez un sujet: </label>
-
-            <select class="selectInstance">
-              <option value="Liste des sujet">Liste des sujet</option>
-              <option value="Astuce">Astuce</option>
-              <option value="Code brut">Code brut</option>
-              <option value="Bonne pratique">Bonne pratique</option>
-              <option value="signaler un bug">signaler un bug</option>
-            </select>
-
-            <label class="labelName"> Entrer votre prénom: </label>
-
-            <input class="inputName" type="text" name="input_name" />
-
-            <label class="labelMsg">Entrer votre message: </label>
-
-            <textarea class="textarea" name="input_msg"> </textarea>
-
-            <button class="subBtn">ENVOYER</button>
-          </div>
-        </form>
       </div>
-    </div>
 
-    <!-- ---------------GIT GIT/HUB---------------- -->
-    <div class="accordion">
-      <div class="panel panelImage gitContainer">
-        <img src="images/git_github.jpg" alt="Logos Git et Github" />
-      </div>
-      <div class="panel panelText">
-        <p>Derniers ajouts</p>
-        <div class="addContenu">
-          <button type="submit" class="btnAddContenu3">PARTICIPER !</button>
+      <!-- -----------------HTML------------------------ -->
+      <div class="accordion">
+        <div class="panel panelImage htmlContainer">
+          <img src="images/html.jpg" alt="LOGO HTML et LOGO CSS" />
         </div>
-
-        <form class="formInstance">
-          <div class="formContainer">
-            <label class="labelInstance"> Votre suggestion : </label>
-
-            <select class="selectInstance">
-              <option value="Liste des sujet">Sujets</option>
-              <option value="Astuce">Astuce</option>
-              <option value="Code brut">Code brut</option>
-              <option value="Bonne pratique">Bonne pratique</option>
-              <option value="signaler un bug">signaler un bug</option>
-            </select>
-
-            <label class="labelName"> Votre prénom: </label>
-
-            <input class="inputName" type="text" name="input_name" />
-
-            <label class="labelMsg">Votre message: </label>
-
-            <textarea class="textarea" name="input_msg"> </textarea>
-
-            <button class="subBtn">ENVOYER</button>
+        <div class="panel panelText">
+          <p>Latest News</p>
+          <div class="addContenu">
+            <button type="submit" class="btnAddContenu2">ADD</button>
           </div>
-        </form>
+
+          <form class="formInstance">
+            <div class="formContainer">
+              <label class="labelInstance"> Choose a subject : </label>
+
+              <select class="selectInstance">
+                <option value="Liste des sujet">Subjects list</option>
+                <option value="Astuce">Tips</option>
+                <option value="Code brut">Raw Code</option>
+                <option value="Bonne pratique">Best Practices</option>
+                <option value="signaler un bug">Report bug</option>
+              </select>
+
+              <label class="labelName"> Enter your name </label>
+
+              <input class="inputName" type="text" name="input_name" />
+
+              <label class="labelMsg">Enter your message </label>
+
+              <textarea class="textarea" name="input_msg"> </textarea>
+
+              <button class="subBtn">PUSH</button>
+            </div>
+          </form>
+        </div>
       </div>
-    </div>
 
-    <!-- --------------Contact US--------------------- -->
+      <!-- ---------------GIT GIT/HUB---------------- -->
+      <div class="accordion">
+        <div class="panel panelImage gitContainer">
+          <img src="images/git.jpg" alt="Logos Git et Github" />
+        </div>
+        <div class="panel panelText">
+          <p>Latest News</p>
+          <div class="addContenu">
+            <button type="submit" class="btnAddContenu3">ADD</button>
+          </div>
 
-    <div class="contactContainer panelImage">
-      <a href="contact.html"><img src="images/contact.jpg" alt="Image pour le Contact" /></a>
-    </div>
+          <form class="formInstance">
+            <div class="formContainer">
+              <label class="labelInstance"> Subjects list</label>
+
+              <select class="selectInstance">
+                <option value="Liste des sujet">Subjects list</option>
+                <option value="Astuce">Tips</option>
+                <option value="Code brut">Raw Code</option>
+                <option value="Bonne pratique">Best Practices</option>
+                <option value="signaler un bug">Report bug</option>
+              </select>
+
+              <label class="labelName"> Enter your name </label>
+
+              <input class="inputName" type="text" name="input_name" />
+
+              <label class="labelMsg">Enter your message </label>
+
+              <textarea class="textarea" name="input_msg"> </textarea>
+
+              <button class="subBtn">PUSH</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- --------------Contact US--------------------- -->
+
+      <div class="contactContainer panelImage">
+        <a href="contact.html"><img src="images/nouscontacter.jpg" alt="Image pour le Contact" /></a>
+      </div>
   </main>
 
   <footer>
@@ -206,6 +202,7 @@
           <img class="img_footer" src="images/logo-wild-bottom.png" alt="logo Wild Code School" />
         </a>
       </div>
+    </div>
     </div>
   </footer>
 
